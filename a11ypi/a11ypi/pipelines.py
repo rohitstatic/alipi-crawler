@@ -6,7 +6,7 @@ import json
 
 class AYpiPipeline(object):
     def __init__(self):
-	self.f = open("../a11ypi_dict.json","ab")
+	self.f = open("a11ypi_dict.json","ab")
 	
    
     def process_item(self, item, spider):
