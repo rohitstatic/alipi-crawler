@@ -1,0 +1,12 @@
+
+::REQUIREMENTS::
+
+Python v2.6 - http://www.python.org
+Scrapy Framework - http://www.scrapy.org
+For details regarding installation of scrapy, please visit: http://doc.scrapy.org/intro/install.html
+
+::RUNNING THE CRAWLER::
+To run the crawler, go to the directory where you have installed the 'alipi-crawler'.
+Type 
+'$ scrapy crawl a11y.in'. This runs the crawler. 
+The crawler will output a a11ypi_dict.json file, in the same directory.
