@@ -1,9 +1,9 @@
-from scrapy.spider import BaseSpider
+from scrapy.contrib.spiders import CrawlSpider, Rule
+from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.selector import HtmlXPathSelector
-
 from a11ypi.items import AYpiItem
 
-class AYpiSpider(BaseSpider):
+class AYpiSpider(CrawlSpider):
     name = "a11y.in"
     allowed_domains = ["a11y.in"]
     start_urls = ["http://a11y.in/a11ypi/idea/a11y_firesafety.html", "http://localhost/a11y/renarr.html"]
